@@ -3,8 +3,15 @@
 
 01/spec/slow_spec.rb,0
 
-01/spec/coffee_spec.rb,115
+01/spec/coffee_spec.rb,177
 class CoffeeCoffee1,0
   def ingredientsingredients2,13
   def add(ingredient)add6,62
   def priceprice10,121
+  def colorcolor14,175
+  def temperaturetemperature18,243
+
+02/spec/tea_spec.rb,78
+class TeaTea1,0
+  def flavorflavor2,10
+  def temperaturetemperature6,45
