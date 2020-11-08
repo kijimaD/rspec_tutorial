@@ -4,11 +4,20 @@ module ExpenseTrackerExpenseTracker5,69
     def appapp9,166
     def post_expense(expense)post_expense13,217
 
+04/01/expense_tracker/spec/unit/app/api_spec.rb,65
+module ExpenseTrackerExpenseTracker4,57
+    def appapp10,205
+
 04/01/expense_tracker/spec/spec_helper.rb,0
 
-04/01/expense_tracker/app/api.rb,79
+04/01/expense_tracker/api_snippets.rb,67
+class API < Sinatra::BaseAPI1,0
+  def initializeinitialize2,26
+
+04/01/expense_tracker/app/api.rb,134
 module ExpenseTrackerExpenseTracker4,39
   class API < Sinatra::BaseAPI5,61
+    def initialize(ledger: Ledger.new)initialize6,89
 
 01/spec/sandwich_spec.rb,0
 
