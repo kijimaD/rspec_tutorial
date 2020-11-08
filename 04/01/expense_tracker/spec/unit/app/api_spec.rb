@@ -2,8 +2,6 @@ require_relative '../../../app/api'
 require 'rack/test'
 
 module ExpenseTracker
-  RecordResult = Struct.new(:success?, :expense_id, :error_message)
-
   RSpec.describe API do
     include Rack::Test::Methods
 
@@ -35,11 +33,6 @@ module ExpenseTracker
           expect(last_response.status).to eq(200)
         end
 
-      end
-
-      context 'when the expense fails validation' do
-        it 'return an error message'
-        it 'responds with a 422 (Unprocessable entity'
       end
     end
 
