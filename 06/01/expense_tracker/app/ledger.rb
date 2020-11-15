@@ -1,3 +1,5 @@
+require_relative '../config/sequel'
+
 module ExpenseTracker
   RecordResult = Struct.new(:success?, :expense_id, :error_message)
 
@@ -11,6 +13,10 @@ module ExpenseTracker
       DB[:expenses].insert(expense)
       id = DB[:expenses].max(:id)
       RecordResult.new(true, id, nil)
+    end
+
+    def expenses_on(date)
+      DB[:expenses].where(date: date).all
     end
   end
 end
